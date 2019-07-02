@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=0, peso=0 , men = 0, mas = 0;
+        do
+        {
+            peso = parseFloat(window.prompt("ingrese el peso "+n+" [0 para terminar]"));
+            if(peso<80)
+            {
+                men = men + 1;
+            }
+            else
+            {
+                mas = mas + 1;
+            }
+            n=n+1;
+        }
+        while(peso!=0);
+        document.writeln("los que pesan mas de 80 son "+mas);
+        document.writeln("los que pesan menos de 80 son "+men);
+    </script>
+</body>
+</html>

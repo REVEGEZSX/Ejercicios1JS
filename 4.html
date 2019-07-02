@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = 0, neg = 1, pos = 0;
+
+        for(x=1;x<=10;x++)
+        {
+            n = parseInt(window.prompt("ingrese el "+x+" numero"));
+            if(n<0)
+            {
+                neg = neg * n;
+            }
+            else if(n>0)
+            {
+                pos = pos + n;
+            }
+            else
+            {
+                n = 0;
+            }
+        }
+        document.writeln("La multiplicacion de los negativos es "+neg);
+        document.writeln("La suma de los positivos es "+pos);
+    </script>
+</body>
+</html>

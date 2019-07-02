@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salh = 0, salm = 0;
+        for(x=1;x<=10;x++)
+        {
+            alert("TRABAJADOR"+x);
+            var nombre = window.prompt("ingrese su nombre");
+            var sueldo = parseInt(window.prompt("INGRESE SU SALARIO"));
+            var sexo = parseInt(window.prompt("ingrese su sexo"));
+
+            if(sexo == 1)
+            {
+                if(sueldo>500)
+                {
+                    salm = salm + sueldo;
+                }
+            }
+            if(sexo == 2)
+            {
+                if(sueldo<400)
+                {
+                    salh = salh + sueldo;
+                }
+            }
+            document.writeln("las mujeres que ganan mas de $500 son "+salm)
+            document.writeln("Los hombres que ganan menos de $400 son "+salh)
+        } 
+    </script>
+</body>
+</html>
